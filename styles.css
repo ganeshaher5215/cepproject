@@ -1,0 +1,98 @@
+<style>
+        /* Basic reset */
+        body, margin, padding {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #050606; /* Blue background color */
+            padding: 10px 20px;
+            color: #ffffff; /* White text color */
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 20px;
+        }
+
+        .navbar-nav .nav-link {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffd700; /* Gold color on hover */
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .navbar-nav.active {
+                display: flex;
+            }
+
+            .navbar-toggler {
+                display: block;
+                background: none;
+                border: none;
+                color: #ffffff;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+
+            .navbar-toggler:hover {
+                color: #ffd700;
+            }
+
+            .navbar-toggler-icon {
+                display: inline-block;
+                width: 24px;
+                height: 2px;
+                background: #ffffff;
+                position: relative;
+            }
+
+            .navbar-toggler-icon::before,
+            .navbar-toggler-icon::after {
+                content: "";
+                display: block;
+                width: 24px;
+                height: 2px;
+                background: #ffffff;
+                position: absolute;
+                left: 0;
+            }
+
+            .navbar-toggler-icon::before {
+                top: 8px;
+            }
+
+            .navbar-toggler-icon::after {
+                top: 16px;
+            }
+        }
